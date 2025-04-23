@@ -31,6 +31,27 @@
         },
         "operationId": "6ee0c151-5c8e-4733-b336-45b8c6bcdbcd"
       }
+    },
+    "/adder": {
+      "x-zuplo-path": {
+        "pathMode": "open-api"
+      },
+      "get": {
+        "summary": "Garrett's Awesome New API",
+        "description": "",
+        "x-zuplo-route": {
+          "corsPolicy": "none",
+          "handler": {
+            "export": "default",
+            "module": "$import(./modules/hello-world)",
+            "options": {}
+          },
+          "policies": {
+            "inbound": []
+          }
+        },
+        "operationId": "709b50c1-35c4-4364-b1e3-21caca430903"
+      }
     }
   }
 }
